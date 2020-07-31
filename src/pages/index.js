@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import Layout from '../components/Layout'
+import ContentMain from '../components/ContentMain'
 
 const Title = styled.h1`
 	font-size: 50px;
@@ -6,5 +8,9 @@ const Title = styled.h1`
 `
 
 export default function Home() {
-	return <Title>My page</Title>
+	return (
+		<Layout>
+			<ContentMain />
+		</Layout>
+	)
 }

@@ -7,10 +7,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@types/styled-components": "^5.1.1",
     "next": "latest",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
-    "styled-components": "^5.0.0"
+    "styled-components": "^5.0.0",
+    "styled-components-breakpoint": "^3.0.0-preview.20"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.8.0"
