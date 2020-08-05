@@ -1,31 +1,33 @@
 import styled, { css, ThemeProvider } from 'styled-components'
 import { myTheme } from '../styles/GlobalStyle'
-import breakpoint from 'styled-components-breakpoint'
+import { breakpoint } from 'styled-components-breakpoint'
 
 const ImageCardWrapper = styled.div`
   position: absolute;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 60% 20% 2% 17%;
-  top: 90px;
-  right: -60px;
   border-radius: 5px 5px;
   background: ${(props) => props.theme.colorPlatinum};
   height: auto;
-  width: 375px;
   text-align: center;
   box-shadow: -11.31px 11.31px 25px 0px rgba(138, 131, 124, 0.23);
-  /* ${breakpoint('md')`
-    top: 20px;
-    right: 65px;
+	${breakpoint('md')`
+		width: 330px;
+    top: 80px;
+    right: -60px;
   `}
   ${breakpoint('lg')`
     top: 150px;
-    right: -50px;
+		right: -50px;
+		width: 375px;
+		height: 500px;
   `}
   ${breakpoint('xl')`
-    
-  `} */
+		top: 90px;
+		right: -60px;
+		height: auto;
+  `}
 `
 
 const StyledImage = styled.img`

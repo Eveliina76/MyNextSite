@@ -1,17 +1,20 @@
 import styled, { css, ThemeProvider } from 'styled-components'
-import breakpoint from 'styled-components-breakpoint'
+import { breakpoint } from 'styled-components-breakpoint'
 import { myTheme } from '../styles/GlobalStyle'
 
 const PageTitleWrapper = styled.div`
-  display: flex;
+  
   background: ${(props) => props.theme.colorWhite};
-  align-items: center;
-  margin-left: 1rem;
-  /* ${breakpoint('md')`
-    
+  display: none;
+  flex-direction: row;
+  margin-left: 0;
+
+  ${breakpoint('md')`
+    display: flex;
+    align-items: center;
   `}
-  ${breakpoint('lg')`
-   
+  /* ${breakpoint('lg')`
+    margin-left: 1rem;
   `}
   ${breakpoint('xl')`
     ;
@@ -21,11 +24,14 @@ const StyledName = styled.div`
 	color: ${(props) => props.theme.colorBlack};
 	font-family: ${(props) => props.theme.titleFont};
 	font-size: ${(props) => props.theme.h3FontSize};
-	text-align: right;
 	padding-right: 10px;
+  ${breakpoint('xs')`
+    font-size: ${(props) => props.theme.h4FontSize};
+  `}
 	/* ${breakpoint('md')`
     font-size: ${(props) => props.theme.h3FontSize};
     padding-right: 5px;
+    text-align: right;
   `}
 	${breakpoint('lg')`
     font-size: ${(props) => props.theme.h3FontSize};

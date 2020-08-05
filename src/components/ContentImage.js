@@ -1,19 +1,18 @@
 import styled, { css, ThemeProvider } from 'styled-components'
-import breakpoint from 'styled-components-breakpoint'
+import { breakpoint } from 'styled-components-breakpoint'
 import { myTheme } from '../styles/GlobalStyle'
 import ImageCard from '../components/ImageCard'
 
 const ContentImageWrapper = styled.div`
-	position: relative;
-	background: ${(props) => props.theme.colorChoco};
-	border-radius: 0 5px 5px 0;
-	/* ${breakpoint('md')`
-    width: auto;
-    height: 390px;
-  `}
+	display: none;
 	${breakpoint('md')`
-    height: auto;
-  `} */
+		position: relative;
+		background: ${(props) => props.theme.colorChoco};
+		width: auto;
+		display: flex;
+		height: auto;
+		border-radius: 0 5px 5px 0;
+  `}
 `
 
 const ContentImage = () => {

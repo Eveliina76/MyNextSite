@@ -1,5 +1,5 @@
 import styled, { css, ThemeProvider } from 'styled-components'
-import breakpoint from 'styled-components-breakpoint'
+import { breakpoint } from 'styled-components-breakpoint'
 import { myTheme } from '../styles/GlobalStyle'
 
 import ContentText from '../components/ContentText'
@@ -7,15 +7,14 @@ import ContentImage from '../components/ContentImage'
 
 const ContentMainWrapper = styled.div`
 	display: grid;
-  grid-template-columns: 40% 60%;
-	min-height: calc(100vh - 200px);
+	grid-template-columns: 100%;
+	min-height: -webkit-fill-available;
+	overflow: auto;
 	background: ${(props) => props.theme.colorWhite};
-	/* ${breakpoint('md')`
-    grid-template-columns: 100%;
+	${breakpoint('md')`
+		min-height: calc(100vh - 200px);
+		grid-template-columns: 40% 60%;
   `}
-	${breakpoint('xl')`
-    
-  `} */
 `
 
 const ContentMain = () => {
