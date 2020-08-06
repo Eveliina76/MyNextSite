@@ -1,25 +1,29 @@
 import Link from 'next/link'
 import styled, { css, ThemeProvider } from 'styled-components'
 import { myTheme } from '../styles/GlobalStyle'
-
-// import LinkedIn from '../images/logoLinkedIn.svg'
-// import Github from '../images/logoGithub.svg'
-// import Instagram from '../images/logoInstagram.svg'
-// import Blog from '../images/logoBlog.svg'
+import { breakpoint } from 'styled-components-breakpoint'
 
 const SocialMediaWrapper = styled.div`
 	display: flex;
-	grid-column-start: 2;
-	justify-content: flex-end;
+	grid-column-start: 1;
+	justify-content: center;
 	align-items: center;
 	background: ${(props) => props.theme.colorWhite};
-	margin-left: 1.5rem;
+	${breakpoint('md')`
+    grid-column-start: 2;
+    justify-content: flex-end;
+    margin-left: 1.5rem;
+  `}
 `
 
 const StyledLink = styled.a``
 const StyledImage = styled.img`
-	height: 35px;
-	margin: 0 10px;
+	height: 25px;
+	margin: 0 5px;
+	${breakpoint('md')`
+    height: 35px;
+    margin: 0 10px;
+  `}
 `
 
 const SocialMedia = () => {

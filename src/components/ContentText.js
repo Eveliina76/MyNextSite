@@ -1,23 +1,28 @@
 import styled, { css, ThemeProvider } from 'styled-components'
-import breakpoint from 'styled-components-breakpoint'
+import { breakpoint } from 'styled-components-breakpoint'
 import { myTheme } from '../styles/GlobalStyle'
 
 const ContentTextWrapper = styled.div`
   background: ${(props) => props.theme.colorWhite};
   color: ${(props) => props.theme.colorBlack};
-  width: 650px;
-  padding: 0px 0px 0px 150px;
-  /* ${breakpoint('md')`
-    width: 700px;
-    padding: 0px 0px 0px 80px;
+	width: auto;
+	padding: 10px 20px 10px 20px;
+	${breakpoint('sm')`
+    width: 430px;
+    padding: 10px 20px 10px 25px;
+  `}
+  ${breakpoint('md')`
+    width: 430px;
+    padding: 25px 0px 0px 90px;
   `}
   ${breakpoint('lg')`
-    width: 550px;
-    padding: 90px 0px 0px 100px;
+    width: 530px;
+    padding: 150px 0px 0px 100px;
   `}
   ${breakpoint('xl')`
-    
-  `} */
+		width: 650px;
+		padding: 0px 0px 0px 150px;
+  `} 
   h1 {
     font-family: ${(props) => props.theme.titleFont};
     font-size: ${(props) => props.theme.h1FontSize};
@@ -37,9 +42,9 @@ const ContentText = () => {
 			<ContentTextWrapper>
 				<h1>Hello;</h1>
 				<p>
-					I’m Eveliina, a web designer. I’m currently based in Helsinki Finland.
-					For the past +2 years I’ve been working for Wunder as a Front End
-					Developer.
+					I’m Eveliina, a web developer. I’m currently based in Helsinki
+					Finland. For the past +2 years I’ve been working for Wunder as a Front
+					End Developer.
 				</p>
 				<p>
 					I love to implement designs to the perfection. I pay a lot of

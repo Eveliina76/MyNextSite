@@ -1,4 +1,5 @@
 import { myTheme } from '../styles/GlobalStyle'
+import { breakpoint } from 'styled-components-breakpoint'
 import Link from 'next/link'
 import styled, { css, ThemeProvider } from 'styled-components'
 
@@ -8,22 +9,31 @@ const StyledNavBar = styled.div`
 	align-items: center;
 `
 const NavList = styled.ul`
-	display: flex;
+	display: none;
 	font-family: ${(props) => props.theme.font};
 	list-style-type: none;
-	margin-top: 1rem;
+	${breakpoint('sm')`
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 1rem;
+  `}
 `
-const NavItem = styled.li``
+const NavItem = styled.li`
+	padding-top: 10px;
+`
 
 const StyledLink = styled.a`
 	color: ${(props) => props.theme.colorBlack};
 	text-decoration: none;
-	font-size: ${(props) => props.theme.h4FontSize};
-	margin-right: 2rem;
+	font-size: ${(props) => props.theme.h3FontSize};
 	:hover {
 		color: ${(props) => props.theme.colorVermilion};
 		text-decoration: underline;
 	}
+	${breakpoint('sm')`
+    font-size: ${(props) => props.theme.h4FontSize};
+    margin-right: 2rem;
+  `}
 `
 
 const NavBar = () => {

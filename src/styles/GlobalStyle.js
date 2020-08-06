@@ -28,6 +28,7 @@ export const myTheme = {
 	h3FontSize: '1.25rem', //20px
 	h4FontSize: '1rem', //16px
 	h5FontSize: '0.875rem', //14px
+	h6FontSize: '0.75rem', //12px
 	textFontSize: '1.0625rem', //17px
 
 	//BreakPoints
