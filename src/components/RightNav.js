@@ -19,7 +19,7 @@ const StyledRightNav = styled.ul`
     width: 160px;
     border-radius: 0 5px 5px 0;
     box-shadow: 0px 12px 9px -4px rgba(138, 131, 124, 0.23);
-    margin-top:0;
+    margin-top: 0;
     padding: 50px 0 0 0;
     transition: transform 0.3s ease-in-out;
   `}

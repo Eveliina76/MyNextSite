@@ -4,14 +4,15 @@ import { myTheme } from '../styles/GlobalStyle'
 import ImageCard from '../components/ImageCard'
 
 const ContentImageWrapper = styled.div`
-	display: none;
+	display: flex;
+	background: ${(props) => props.theme.colorChoco};
+	height: 320px;
 	${breakpoint('md')`
 		position: relative;
-		background: ${(props) => props.theme.colorChoco};
 		width: auto;
-		display: flex;
 		height: auto;
 		border-radius: 0 5px 5px 0;
+		margin: 0;
   `}
 `
 
