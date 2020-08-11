@@ -8,11 +8,10 @@ import ContentImage from '../components/ContentImage'
 const ContentMainWrapper = styled.div`
 	display: grid;
 	grid-template-columns: 100%;
-	min-height: -webkit-fill-available;
-	overflow: auto;
+	height: calc(100vh - 200px);
+	overflow-y: scroll;
 	background: ${(props) => props.theme.colorWhite};
 	${breakpoint('md')`
-		min-height: calc(100vh - 200px);
 		grid-template-columns: 40% 60%;
   `}
 `
