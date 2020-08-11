@@ -47,13 +47,13 @@ const ContentText = () => {
 					End Developer.
 				</p>
 				<p>
-					I love to implement designs to the perfection. I pay a lot of
-					attention to the details. I’m all about making things look good. I
-					enjoy working with people and learning by doing.
+					I love to implement designs to perfection. I pay a lot of attention to
+					the details. I’m all about making things look good. I enjoy working
+					with people and learning by doing.
 				</p>
 				<p>
 					In my 40s I decided to pursue a new career as a developer. I had made
-					a long career in IT industry working in various roles like
+					a long career in the IT industry working in various roles like
 					Sustainability lead for a big international company.
 				</p>
 				<p>
@@ -64,7 +64,8 @@ const ContentText = () => {
 				</p>
 				<p>
 					One year later I had the honour of sharing my story in the same event
-					and encourage other women to pursue their dreams of becoming a coder.
+					and encourage other women to pursue their dream of working in the IT
+					industry.
 					<br />
 				</p>
 				<p>
