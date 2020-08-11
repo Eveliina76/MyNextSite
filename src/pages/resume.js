@@ -1,7 +1,6 @@
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import { myTheme } from '../styles/GlobalStyle'
 import styled, { css, ThemeProvider } from 'styled-components'
-import { breakpoint } from 'styled-components-breakpoint'
 
 import WorkCard from '../components/WorkCard'
 import EducationCard from '../components/EducationCard'
