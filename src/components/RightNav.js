@@ -15,8 +15,8 @@ const StyledRightNav = styled.ul`
     transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     top: 0;
     right: 0;
-    height: 20vh;
-    width: 160px;
+    height: 25vh;
+    width: 250px;
     border-radius: 0 5px 5px 0;
     box-shadow: 0px 12px 9px -4px rgba(138, 131, 124, 0.23);
     margin-top: 0;
@@ -26,7 +26,7 @@ const StyledRightNav = styled.ul`
 `
 const NavItem = styled.li`
 	width: 100%;
-	padding: 10px;
+	padding: 15px;
 	text-align: center;
 	:hover {
 		background-color: ${(props) => props.theme.colorVermilion};
