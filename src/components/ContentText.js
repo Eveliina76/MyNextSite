@@ -5,15 +5,12 @@ import { myTheme } from '../styles/GlobalStyle'
 const ContentTextWrapper = styled.div`
   background: ${(props) => props.theme.colorWhite};
   color: ${(props) => props.theme.colorBlack};
-	width: auto;
-	padding: 10px 20px 10px 20px;
-	${breakpoint('sm')`
-    width: 430px;
-    padding: 10px 20px 10px 25px;
-  `}
+	width: 430px;
+	padding: 10px 20px 10px 25px;
+	margin-bottom: 15px;
   ${breakpoint('md')`
-    width: 430px;
-    padding: 25px 0px 0px 90px;
+		padding: 25px 0px 0px 90px;
+		margin-bottom: 0;
   `}
   ${breakpoint('lg')`
     width: 530px;
