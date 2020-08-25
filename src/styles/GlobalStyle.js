@@ -11,11 +11,14 @@ export const GlobalStyle = createGlobalStyle`
 `
 export const myTheme = {
 	// Colors
+	colorAliceBlue: '#E7E9EF',
 	colorBlack: '#000',
-	colorPlatinum: '#E1DEDB',
-	colorChoco: '#87787E',
-	colorVermilion: '#BF4E30',
+	colorCerise: '#D93058',
+	colorPlatinum: '#ECE9EB',
 	colorWhite: '#fff',
+	colorHeliotropeGray: '#9A8C98',
+	colorIndependence: '#44475F',
+	colorSpaceCadet: '#22223B',
 
 	// FontFamily
 	titleFont: 'Poppins, sans-serif',

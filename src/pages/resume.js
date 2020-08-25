@@ -7,16 +7,17 @@ import EducationCard from '../components/EducationCard'
 import SkillsCard from '../components/SkillsCard'
 
 const ResumeWrapper = styled.div`
-	height: calc(100vh - 200px);
+	height: calc(100vh - 12.5rem);
 	overflow-y: scroll;
-	background-color: ${(props) => props.theme.colorChoco};
-	padding-top: 35px;
-	padding-bottom: 20px;
+	background-color: ${(props) => props.theme.colorIndependence};
+	padding-top: 0.5rem;
+	padding-bottom: 1.25rem;
 	h1 {
 		font-family: ${(props) => props.theme.titleFont};
 		font-size: ${(props) => props.theme.h2FontSize};
 		color: ${(props) => props.theme.colorWhite};
 		text-align: center;
+		margin-bottom: 0.5rem;
 	}
 `
 const HeadingsWrapper = styled.div`

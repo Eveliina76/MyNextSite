@@ -3,14 +3,14 @@ import styled, { ThemeProvider } from 'styled-components'
 import { breakpoint } from 'styled-components-breakpoint'
 
 const WorkCardWrapper = styled.div`
-	margin-bottom: 15px;
+	margin-bottom: 0.9375rem;
 `
 
 const StyledWorkCard = styled.div`
 	display: grid;
 	height: auto;
   width: auto;
-  padding: 10px 15px;
+  padding: 0.625rem 0.9375rem;
 	background-color: ${(props) => props.theme.colorWhite};
   border-radius: 0;
 	margin: 0 auto;
@@ -21,57 +21,58 @@ const StyledWorkCard = styled.div`
 		font-family: ${(props) => props.theme.font};
 		font-size: ${(props) => props.theme.h3FontSize};
 		font-weight: bold;
-		color: ${(props) => props.theme.colorVermilion};
-		margin: 10px 0;
+		color: ${(props) => props.theme.colorCerise};
+		margin: 0.625rem 0;
 	}
 	h4 {
 		align-self: center;
 		font-family: ${(props) => props.theme.fontSemiBold};
 		font-size: ${(props) => props.theme.h4FontSize};
-		color: ${(props) => props.theme.colorBlack};
-		margin: 0 0 10px 0;
+		color: ${(props) => props.theme.colorSpaceCadet};
+		margin: 0 0 0.625rem 0;
 	}
 	h5 {
 		align-self: center;
 		font-family: ${(props) => props.theme.font};
 		font-size: ${(props) => props.theme.h5FontSize};
-		color: ${(props) => props.theme.colorBlack};
+		color: ${(props) => props.theme.colorSpaceCadet};
 		margin: 0;
 	}
 	p {
 		align-self: start;
 		font-family: ${(props) => props.theme.font};
 		font-size: ${(props) => props.theme.textFontSize};
-		margin: 10px 0;
+		color: ${(props) => props.theme.colorSpaceCadet};
+		margin: 0.625rem 0;
 	}
 	${breakpoint('md')`
   grid-template-columns: 100%;
   grid-template-rows: 15% 10% 10% 65%;
-  width: 650px;
-  border-radius: 10px 10px;
-  padding: 40px;
+  width: 40.625rem;
+  border-radius: 0.625rem 0.625rem;
+  padding: 2.5rem;
   h3 {
     grid-row-start: 1;
     
 	}
   h4 {
     grid-row-start: 2;
-    margin: 20px 0;
+    margin: 1.25rem 0;
 	}
   h5 {
     grid-row-start: 3;
-    margin: 10px 0;
+    margin: 0.625rem 0;
   }
   p {
     grid-row-start: 4;
     grid-column-start: 1;
-    margin: 20px 0;
+    margin: 1.25rem 0;
 	}
   `}
 	${breakpoint('lg')`
   grid-template-columns: 40% 60%;
   grid-template-rows: 20% 15% 15% 40%;
-  width: 800px;
+  width: 50rem;
   h3 {
     grid-column-start: 1;
     grid-row-start: 1;
@@ -96,7 +97,6 @@ const StyledWorkCard = styled.div`
   ${breakpoint('xl')`
   grid-template-columns: 40% 60%;
   grid-template-rows: 20% 15% 15% 40%;
-  width: 800px;
   h3 {
     grid-column-start: 1;
     grid-row-start: 1;

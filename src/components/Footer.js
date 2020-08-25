@@ -9,11 +9,11 @@ const FooterWrapper = styled.div`
 	grid-template-rows: 33% 33% 33%;
 	position: fixed;
 	bottom: 0;
-	height: 100px;
+	height: 6.25rem;
 	width: 100%;
 	align-items: center;
 	background: ${(props) => props.theme.colorWhite};
-	padding: 2px 40px;
+	padding: 0.125rem 2.5rem;
 	margin: 0;
 	${breakpoint('md')`
   display: grid;
@@ -24,17 +24,17 @@ const FooterWrapper = styled.div`
 const StyledCopyright = styled.div`
 	font-family: ${(props) => props.theme.font};
 	font-size: ${(props) => props.theme.h5FontSize};
-	color: ${(props) => props.theme.colorBlack};
+	color: ${(props) => props.theme.colorSpaceCadet};
 	text-align: center;
 	align-self: center;
 	p {
-		margin: 10px 0 10px 0;
+		margin: 0.625rem 0 0.625rem 0;
 	}
 	${breakpoint('md')`
     align-self: end;
     text-align: left;
     p {
-      margin: 14px 0 0 0;
+      margin: 0.875rem 0 0 0;
     }
   `}
 `
@@ -44,7 +44,7 @@ const CreditLink = styled.a`
 	align-self: flex-start;
 	font-family: ${(props) => props.theme.font};
 	font-size: ${(props) => props.theme.h6FontSize};
-	color: ${(props) => props.theme.colorBlack};
+	color: ${(props) => props.theme.colorSpaceCadet};
 	text-align: center;
 	text-decoration: none;
 	${breakpoint('md')`

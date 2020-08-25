@@ -3,12 +3,12 @@ import styled, { ThemeProvider } from 'styled-components'
 import { breakpoint } from 'styled-components-breakpoint'
 
 const SkillsCardWrapper = styled.div`
-	margin: 30px 0;
+	margin: 1.875rem 0;
 `
 const StyledImage = styled.img`
-	height: 15px;
-	margin-top: 13px;
-	padding-right: 5px;
+	height: 0.9375rem;
+	margin-top: 0.6875rem;
+	padding-right: 0.3125rem;
 `
 
 const StyledSkillsCard = styled.div`
@@ -17,28 +17,28 @@ const StyledSkillsCard = styled.div`
 	border-radius: 0;
 	height: auto;
 	width: auto;
-	padding: 10px;
+	padding: 0.625rem;
 	margin: 0 auto;
 	box-shadow: -11.31px 11.31px 25px 0px rgba(138, 131, 124, 0.23);
 	h3 {
 		font-family: ${(props) => props.theme.font};
 		font-size: ${(props) => props.theme.h3FontSize};
 		font-weight: bold;
-		color: ${(props) => props.theme.colorVermilion};
-		margin: 10px 0;
+		color: ${(props) => props.theme.colorCerise};
+		margin: 0.625rem 0;
 	}
 	h4 {
 		font-family: ${(props) => props.theme.font};
 		font-size: ${(props) => props.theme.h4FontSize};
-		color: ${(props) => props.theme.colorBlack};
-		margin: 10px 0;
+		color: ${(props) => props.theme.colorSpaceCadet};
+		margin: 0.625rem 0;
 	}
 	${breakpoint('md')`
-  width: 650px;
-  border-radius: 10px 10px;
+  width: 40.625rem;
+  border-radius: 0.625rem 0.625rem;
   `}
 	${breakpoint('lg')`
-    width: 800px;
+    width: 50rem;
   `}
 `
 
@@ -49,9 +49,9 @@ const SkillsList = styled.ul`
 	font-family: ${(props) => props.theme.font};
 	list-style-type: none;
 	margin-top: 0.5rem;
-	padding-left: 10px;
+	padding-left: 0.625rem;
 	${breakpoint('md')`
-  padding-left: 40px;
+  padding-left: 2.5rem;
   `}
 `
 const LanguageList = styled.ul`
@@ -61,9 +61,9 @@ const LanguageList = styled.ul`
 	font-family: ${(props) => props.theme.font};
 	list-style-type: none;
 	margin-top: 0.5rem;
-	padding-left: 10px;
+	padding-left: 0.625rem;
 	${breakpoint('md')`
-  padding-left: 40px;
+  padding-left: 2.5rem;
   `}
 `
 

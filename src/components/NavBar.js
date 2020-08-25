@@ -23,11 +23,11 @@ const NavItem = styled.li`
 `
 
 const StyledLink = styled.a`
-	color: ${(props) => props.theme.colorBlack};
+	color: ${(props) => props.theme.colorSpaceCadet};
 	text-decoration: none;
 	font-size: ${(props) => props.theme.h3FontSize};
 	:hover {
-		color: ${(props) => props.theme.colorVermilion};
+		color: ${(props) => props.theme.colorCerise};
 		text-decoration: underline;
 	}
 	${breakpoint('sm')`
@@ -43,12 +43,17 @@ const NavBar = () => {
 				<NavList>
 					<NavItem>
 						<Link href={'/'} passHref>
-							<StyledLink> ABOUT ME </StyledLink>
+							<StyledLink>HOME</StyledLink>
 						</Link>
 					</NavItem>
 					<NavItem>
 						<Link href={'/resume'} passHref>
 							<StyledLink>RESUME</StyledLink>
+						</Link>
+					</NavItem>
+					<NavItem>
+						<Link href={'/about'} passHref>
+							<StyledLink>ABOUT</StyledLink>
 						</Link>
 					</NavItem>
 				</NavList>

@@ -5,13 +5,13 @@ import ImageCard from '../components/ImageCard'
 
 const ContentImageWrapper = styled.div`
 	display: flex;
-	background: ${(props) => props.theme.colorChoco};
-	height: 320px;
+	background: ${(props) => props.theme.colorIndependence};
+	height: 20rem;
 	${breakpoint('md')`
 		position: relative;
 		width: auto;
 		height: auto;
-		border-radius: 0 5px 5px 0;
+		border-radius: 0 0.3125rem 0.3125rem 0;
 		margin: 0;
   `}
 `
