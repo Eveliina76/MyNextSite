@@ -15,7 +15,10 @@ const AboutWrapper = styled.div`
 	background-color: ${(props) => props.theme.colorIndependence};
 	${breakpoint('md')`
 		height: calc(100vh - 12.5rem);
-		grid-template-columns: 50% 50%;
+		grid-template-columns: 40% 60%;
+  `}
+	${breakpoint('lg')`
+		grid-template-columns: 45% 55%;
   `}
 	${breakpoint('xl')`
 		grid-template-columns: 33% 33% 33%;

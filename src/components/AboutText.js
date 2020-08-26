@@ -8,7 +8,7 @@ const TextWrapper = styled.div`
 	height: auto;
 	background-color: ${(props) => props.theme.colorindependece};
 	color: ${(props) => props.theme.colorWhite};
-	padding: 1rem;
+	padding: 1.5rem;
 	h1 {
 		font-family: ${(props) => props.theme.titleFont};
 		font-size: ${(props) => props.theme.h2FontSize};
@@ -20,6 +20,7 @@ const TextWrapper = styled.div`
 	}
   ${breakpoint('md')`
     margin-top: 2rem;
+    padding: 0 1.5rem 1rem 0;
     overflow-y: scroll;
     ::-webkit-scrollbar {
 		  width: 5px;
@@ -43,7 +44,7 @@ const TextWrapper = styled.div`
 		width: 5px;
 	  }
 	  ::-webkit-scrollbar-thumb {
-		  background-color: ${(props) => props.theme.colorindependece};
+		  background-color: ${(props) => props.theme.colorIndependece};
     }
   `}
 `
