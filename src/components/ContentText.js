@@ -39,7 +39,7 @@ const ContentText = () => {
 			<ContentTextWrapper>
 				<h1>Hello;</h1>
 				<p>
-					I’m Eveliina, a Helsinki based web developer. For the past +2 years
+					I’m Eveliina, a Helsinki based web developer. For the past 2 years
 					I’ve been working for Wunder as a Front End Developer.
 				</p>
 				<p>
@@ -55,8 +55,7 @@ const ContentText = () => {
 					When I'm not working I will be probably spending time with my two
 					rescue dogs, reading books, making jewellery or letting some steam of
 					at the gym. I love slow mornings, exploring new places, enjoying
-					delicious food, decorating my home and going for a walk in a city, on
-					the mountains or by the sea.
+					delicious food, decorating my home and going for a walks.
 				</p>
 				<p>
 					If you would like to get in contact with me, please do so through my
