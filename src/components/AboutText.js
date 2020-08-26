@@ -36,7 +36,8 @@ const TextWrapper = styled.div`
 		display: flex;
     flex-direction: column;
     height: 600px;
-    margin-top: 2rem;
+    margin-top: 0;
+    padding-top: 1.5rem;
     overflow-y: scroll;
     ::-webkit-scrollbar {
 		width: 5px;
