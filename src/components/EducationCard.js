@@ -20,27 +20,28 @@ const StyledEducationCard = styled.div`
 		font-family: ${(props) => props.theme.font};
 		font-size: ${(props) => props.theme.h3FontSize};
 		font-weight: bold;
-		color: ${(props) => props.theme.colorVermilion};
+		color: ${(props) => props.theme.colorCerise};
 		margin: 10px 0;
 	}
 	h4 {
 		align-self: center;
 		font-family: ${(props) => props.theme.fontSemiBold};
 		font-size: ${(props) => props.theme.h4FontSize};
-		color: ${(props) => props.theme.colorBlack};
+		color: ${(props) => props.theme.colorSpaceCadet};
 		margin: 15px 0;
 	}
 	h5 {
 		align-self: center;
 		font-family: ${(props) => props.theme.font};
 		font-size: ${(props) => props.theme.h5FontSize};
-		color: ${(props) => props.theme.colorBlack};
+		color: ${(props) => props.theme.colorSpaceCadet};
 		margin: 10px 0;
 	}
 	p {
 		align-self: start;
 		font-family: ${(props) => props.theme.font};
 		font-size: ${(props) => props.theme.textFontSize};
+		color: ${(props) => props.theme.colorSpaceCadet};
 		margin: 0;
 	}
 	${breakpoint('md')`

@@ -3,42 +3,27 @@ import { breakpoint } from 'styled-components-breakpoint'
 import { myTheme } from '../styles/GlobalStyle'
 
 const PageTitleWrapper = styled.div`
-  
-  background: ${(props) => props.theme.colorWhite};
-  display: none;
-  flex-direction: row;
-  margin-left: 0;
+	background: ${(props) => props.theme.colorWhite};
+	display: none;
+	flex-direction: row;
+	margin-left: 0;
 
-  ${breakpoint('md')`
+	${breakpoint('md')`
     display: flex;
     align-items: center;
   `}
-  /* ${breakpoint('lg')`
-    margin-left: 1rem;
-  `}
-  ${breakpoint('xl')`
-    ;
-  `} */
 `
 const StyledName = styled.div`
-	color: ${(props) => props.theme.colorBlack};
+	color: ${(props) => props.theme.colorSpaceCadet};
 	font-family: ${(props) => props.theme.titleFont};
 	font-size: ${(props) => props.theme.h3FontSize};
-	padding-right: 10px;
-  ${breakpoint('xs')`
+	padding-right: 0.625rem;
+	${breakpoint('xs')`
     font-size: ${(props) => props.theme.h4FontSize};
   `}
-	/* ${breakpoint('md')`
-    font-size: ${(props) => props.theme.h3FontSize};
-    padding-right: 5px;
-    text-align: right;
-  `}
-	${breakpoint('lg')`
-    font-size: ${(props) => props.theme.h3FontSize};
-  `} */
 `
 const StyledOccupation = styled.div`
-	color: ${(props) => props.theme.colorVermilion};
+	color: ${(props) => props.theme.colorCerise};
 	font-family: ${(props) => props.theme.font};
 	font-size: ${(props) => props.theme.textFontSize};
 `

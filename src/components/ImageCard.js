@@ -7,93 +7,92 @@ const ImageCardWrapper = styled.div`
   grid-template-columns: 100%;
   grid-template-rows: 60% 20% 20%;
   border-radius: 0;
-  background: ${(props) => props.theme.colorPlatinum};
-	width: 270px;
-  height: 280px;
+  background: ${(props) => props.theme.colorAliceBlue};
+	width: 16.875rem;
+  height: 17.5rem;
   text-align: center;
   box-shadow: -5px 9px 11px -5px rgba(138, 131, 124, 0.23);
-	margin: 20px auto;
+	margin: 1.25rem auto;
 	${breakpoint('md')`
 		position: absolute;
 		grid-template-rows: 60% 20% 2% 17%;
-		border-radius: 5px 5px;
-		width: 330px;
+		border-radius: 0.3125rem 0.3125rem;
+		width: 20.625rem;
 		height: auto;
-    top: 80px;
-		right: -60px;
+    top: 5rem;
+		right: -3.75rem;
 		box-shadow: -11.31px 11.31px 25px 0px rgba(138, 131, 124, 0.23);
   `}
   ${breakpoint('lg')`
-    top: 150px;
-		right: -50px;
-		width: 375px;
-		height: 500px;
+    top: 9.375rem;
+		right: -3.125rem;
+		width: 23.4375rem;
+		height: 31.25rem;
   `}
   ${breakpoint('xl')`
-		top: 90px;
-		right: -60px;
+		top: 5.625rem;
+		right: -3.75rem;
 		height: auto;
   `}
 `
 
 const StyledImage = styled.img`
-	height: 150px;
+	height: 9.375rem;
 	margin: 0 auto;
-	padding: 20px 0 0 0;
+	padding: 1.25rem 0 0 0;
 	${breakpoint('md')`
 	height: auto;
-	padding: 30px 0;
+	padding: 1.875rem 0;
   `}
 `
 
 const StyledHeading = styled.div`
 	font-family: ${(props) => props.theme.titleFont};
 	font-size: ${(props) => props.theme.h3FontSize};
-	color: ${(props) => props.theme.colorBlack};
+	color: ${(props) => props.theme.colorSpaceCadet};
 	line-height: 1.2em;
-	margin: 5px 0 0 0;
+	margin: 0.3125rem 0 0 0;
 	${breakpoint('md')`
-		margin: 10px 0px 15px 0;
+		margin: 0.625rem 0 0.9375rem 0;
 	`}
 	${breakpoint('lg')`
 		font-size: ${(props) => props.theme.h2FontSize};
-		margin: 15px 0px 20px 0;
+		margin: 0.9375rem 0 1.25rem 0;
 	`}
 `
 
 const StyledBorder = styled.div`
 	display: none;
 	position: relative;
-	border-top: 2px solid ${(props) => props.theme.colorChoco};
-	height: 5px;
-	width: 60px;
+	border-top: 0.125rem solid ${(props) => props.theme.colorIndependence};
+	height: 0.3125rem;
+	width: 3.75rem;
 	margin: 0;
 	${breakpoint('md')`
 		display: block;
 		position: relative;
-		left: 130px;
-		margin: 0px 0px 10px 0px;
+		left: 8.125rem;
+		margin: 0 0 0.625rem 0;
   `}
 	${breakpoint('lg')`
-		left: 150px;
-		margin: 0px;
+		left: 9.375rem;
+		margin: 0;
   `}
 `
 const StyledText = styled.div`
 	font-family: ${(props) => props.theme.font};
 	font-size: ${(props) => props.theme.h5FontSize};
-	color: ${(props) => props.theme.colorBlack};
+	color: ${(props) => props.theme.colorSpaceCadet};
 	letter-spacing: 0.15em;
 	margin: 0;
-	padding: 10px 0 0 0;
+	padding: 0.625rem 0 0 0;
 	${breakpoint('md')`
 		font-size: ${(props) => props.theme.textFontSize};
-		margin: 20px 0px 40px 0px;
+		margin: 1.25rem 0 2.5rem 0;
 		padding: 0;
   `}
 	${breakpoint('lg')`
 		font-size: ${(props) => props.theme.h4FontSize};
-		margin: 20px 0px 40px 0px;
 	`}
 `
 

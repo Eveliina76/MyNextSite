@@ -11,8 +11,8 @@ const StyledBurger = styled.div`
 	width: 2rem;
 	height: 2rem;
 	position: fixed;
-	top: 12px;
-	right: 18px;
+	top: 0.75rem;
+	right: 1.125rem;
 	z-index: 20;
 
 	${breakpoint('sm')`
@@ -22,9 +22,9 @@ const StyledBurger = styled.div`
 	div {
 		width: 2rem;
 		height: 0.25rem;
-		background-color: ${({ open }) => (open ? '#000' : '#BF4E30')};
-		border-radius: 10px;
-		transform-origin: 1px;
+		background-color: ${({ open }) => (open ? '#fff' : '#D93058')};
+		border-radius: 0.625rem;
+		transform-origin: 0.0625rem;
 		transition: all 0.3s linear;
 		&:nth-child(1) {
 			transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};

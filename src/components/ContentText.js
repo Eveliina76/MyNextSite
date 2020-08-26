@@ -4,32 +4,32 @@ import { myTheme } from '../styles/GlobalStyle'
 
 const ContentTextWrapper = styled.div`
   background: ${(props) => props.theme.colorWhite};
-  color: ${(props) => props.theme.colorBlack};
-	width: 430px;
-	padding: 10px 20px 10px 25px;
-	margin-bottom: 15px;
+  color: ${(props) => props.theme.colorSpaceCadet};
+	width: auto;
+	padding: 0.625rem 1.25rem 0.625rem 1.5625rem;
+	margin-bottom: 0.9375rem;
   ${breakpoint('md')`
-		padding: 25px 0px 0px 90px;
+		padding: 1.5625rem 1.25rem 0 5.625rem;
 		margin-bottom: 0;
   `}
   ${breakpoint('lg')`
-    width: 530px;
-    padding: 150px 0px 0px 100px;
+    width: 33.125rem;
+    padding: 9.375rem 0 0 6.25rem;
   `}
   ${breakpoint('xl')`
-		width: 650px;
-		padding: 0px 0px 0px 150px;
+		width: 40.625rem;
+		padding: 0 0 0 9.375rem;
   `} 
   h1 {
     font-family: ${(props) => props.theme.titleFont};
     font-size: ${(props) => props.theme.h1FontSize};
-    color: ${(props) => props.theme.colorVermilion};
-    margin: 1rem 0;
+    color: ${(props) => props.theme.colorCerise};
+    margin: 2.5rem 0 1rem 0;
   }
   p {
     font-family: ${(props) => props.theme.font};
     font-size: ${(props) => props.theme.textFontSize};
-    margin: 5px 0;
+    margin: 10px 0;
   }
 `
 
@@ -39,9 +39,8 @@ const ContentText = () => {
 			<ContentTextWrapper>
 				<h1>Hello;</h1>
 				<p>
-					I’m Eveliina, a web developer. I’m currently based in Helsinki
-					Finland. For the past +2 years I’ve been working for Wunder as a Front
-					End Developer.
+					I’m Eveliina, a Helsinki based web developer. For the past 2 years
+					I’ve been working for Wunder as a Front End Developer.
 				</p>
 				<p>
 					I love to implement designs to perfection. I pay a lot of attention to
@@ -49,25 +48,18 @@ const ContentText = () => {
 					with people and learning by doing.
 				</p>
 				<p>
-					In my 40s I decided to pursue a new career as a developer. I had made
-					a long career in the IT industry working in various roles like
-					Sustainability lead for a big international company.
+					In my 40s I decided to pursue a new career as a developer. You can
+					read how I ended up becoming a developer in the About page.
 				</p>
 				<p>
-					In 2016 I started my journey to become a developer. First I was
-					learning by myself and doing various web courses. Later I went to get
-					an actual degree. I found my current employer from an event arranged
-					for women who are interested in coding and pursuing a career in IT.
+					When I'm not working I will be probably spending time with my two
+					rescue dogs, reading books, making jewellery or letting some steam of
+					at the gym. I love slow mornings, exploring new places, enjoying
+					delicious food, decorating my home and going for a walks.
 				</p>
 				<p>
-					One year later I had the honour of sharing my story in the same event
-					and encourage other women to pursue their dream of working in the IT
-					industry.
-					<br />
-				</p>
-				<p>
-					I believe it is never too late to change ones life and start something
-					new.
+					If you would like to get in contact with me, please do so through my
+					social media accounts.
 				</p>
 			</ContentTextWrapper>
 		</ThemeProvider>

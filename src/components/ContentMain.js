@@ -8,7 +8,7 @@ import ContentImage from '../components/ContentImage'
 const ContentMainWrapper = styled.div`
 	display: grid;
 	grid-template-columns: 100%;
-	height: calc(100vh - 200px);
+	height: calc(100vh - 12.5rem);
 	overflow-y: scroll;
 	background: ${(props) => props.theme.colorWhite};
 	${breakpoint('md')`
