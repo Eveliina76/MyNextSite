@@ -1,6 +1,7 @@
 import Layout from '../components/Layout'
 import { myTheme } from '../styles/GlobalStyle'
 import styled, { css, ThemeProvider } from 'styled-components'
+import { Heading } from '@tenon-io/tenon-ui'
 
 import WorkCard from '../components/WorkCard'
 import EducationCard from '../components/EducationCard'
@@ -36,14 +37,16 @@ const ResumePage = () => {
 		<ThemeProvider theme={myTheme}>
 			<Layout>
 				<ResumeWrapper>
-					<h1>Resume</h1>
-					<HeadingsWrapper>
-						<h2>Work Experience</h2>
-					</HeadingsWrapper>
-					<WorkCard />
-					<HeadingsWrapper>
-						<h2>Education</h2>
-					</HeadingsWrapper>
+					<Heading.H>Resume</Heading.H>
+					<Heading.LevelBoundary>
+						<HeadingsWrapper>
+							<Heading.H>Work Experience</Heading.H>
+						</HeadingsWrapper>
+						<WorkCard />
+						<HeadingsWrapper>
+							<Heading.H>Education</Heading.H>
+						</HeadingsWrapper>
+					</Heading.LevelBoundary>
 					<EducationCard />
 					<SkillsCard />
 				</ResumeWrapper>

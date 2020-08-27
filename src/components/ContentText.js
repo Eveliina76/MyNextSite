@@ -1,6 +1,7 @@
 import styled, { css, ThemeProvider } from 'styled-components'
 import { breakpoint } from 'styled-components-breakpoint'
 import { myTheme } from '../styles/GlobalStyle'
+import { Heading } from '@tenon-io/tenon-ui'
 
 const ContentTextWrapper = styled.div`
   background: ${(props) => props.theme.colorWhite};
@@ -37,7 +38,7 @@ const ContentText = () => {
 	return (
 		<ThemeProvider theme={myTheme}>
 			<ContentTextWrapper>
-				<h1>Hello;</h1>
+				<Heading.H>Hello;</Heading.H>
 				<p>
 					I’m Eveliina, a Helsinki based web developer. For the past 2 years
 					I’ve been working for Wunder as a Front End Developer.
