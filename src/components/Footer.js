@@ -27,12 +27,14 @@ const StyledCopyright = styled.div`
 	color: ${(props) => props.theme.colorSpaceCadet};
 	text-align: center;
 	align-self: center;
+	padding-bottom: 0.5rem;
 	p {
 		margin: 0.625rem 0 0.625rem 0;
 	}
 	${breakpoint('md')`
     align-self: end;
-    text-align: left;
+		text-align: left;
+		padding-bottom: 0;
     p {
       margin: 0.875rem 0 0 0;
     }
@@ -41,17 +43,20 @@ const StyledCopyright = styled.div`
 const CreditLink = styled.a`
 	grid-column-start: 1;
 	grid-row-start: 3;
-	align-self: flex-start;
+	align-self: flex-end;
 	font-family: ${(props) => props.theme.font};
 	font-size: ${(props) => props.theme.h6FontSize};
 	color: ${(props) => props.theme.colorSpaceCadet};
 	text-align: center;
 	text-decoration: none;
+	padding-bottom: 0.5rem;
 	${breakpoint('md')`
   grid-column-start: 2;
-  grid-row-start: 2;
+	grid-row-start: 2;
+	align-self: flex-start;
   text-align: right;
-  font-size: ${(props) => props.theme.h5FontSize};
+	font-size: ${(props) => props.theme.h5FontSize};
+	padding-bottom: 0;
   `}
 `
 

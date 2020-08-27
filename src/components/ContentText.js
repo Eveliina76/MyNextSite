@@ -25,7 +25,7 @@ const ContentTextWrapper = styled.div`
     font-family: ${(props) => props.theme.titleFont};
     font-size: ${(props) => props.theme.h1FontSize};
     color: ${(props) => props.theme.colorCerise};
-    margin: 2.5rem 0 1rem 0;
+    margin: 0.6rem 0 1rem 0;
   }
   p {
     font-family: ${(props) => props.theme.font};

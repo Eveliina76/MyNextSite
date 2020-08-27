@@ -18,11 +18,11 @@ const SocialMediaWrapper = styled.div`
 
 const StyledLink = styled.a``
 const StyledImage = styled.img`
-	height: 1.5625rem;
-	margin: 0 0.3125rem;
+	height: 2.3rem;
+	margin: 0 0.5rem;
 	${breakpoint('md')`
     height: 2.1875rem;
-    margin: 0 0.625rem;
+		margin: 0 0.625rem;
   `}
 `
 
