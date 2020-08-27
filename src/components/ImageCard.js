@@ -100,7 +100,7 @@ const ImageCard = () => {
 	return (
 		<ThemeProvider theme={myTheme}>
 			<ImageCardWrapper>
-				<StyledImage src="/circleImg.png" alt="my image" />
+				<StyledImage src="/circleImg.png" alt="Image of Eveliina" />
 				<StyledHeading>
 					Eveliina <br /> Champagne
 				</StyledHeading>

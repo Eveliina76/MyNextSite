@@ -1,6 +1,7 @@
 import { myTheme } from '../styles/GlobalStyle'
 import styled, { css, ThemeProvider } from 'styled-components'
 import { breakpoint } from 'styled-components-breakpoint'
+import { Heading } from '@tenon-io/tenon-ui'
 
 const TextWrapper = styled.div`
 	display: flex;
@@ -58,7 +59,7 @@ const AboutText = () => {
 	return (
 		<ThemeProvider theme={myTheme}>
 			<TextWrapper>
-				<h1>This is how I became a developer in my 40’s</h1>
+				<Heading.H>This is how I became a developer in my 40’s</Heading.H>
 				<p>
 					My journey began already in 2015 when I was taking a year off from my
 					previous role as a sustainability lead to recover from depression

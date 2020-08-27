@@ -1,6 +1,7 @@
 import { myTheme } from '../styles/GlobalStyle'
 import styled, { ThemeProvider } from 'styled-components'
 import { breakpoint } from 'styled-components-breakpoint'
+import { Heading } from '@tenon-io/tenon-ui'
 
 const EducationCardWrapper = styled.div`
 	margin-bottom: 15px;
@@ -119,46 +120,73 @@ const EducationCard = () => {
 		<ThemeProvider theme={myTheme}>
 			<EducationCardWrapper>
 				<StyledEducationCard>
-					<h3>2017-2018</h3>
-					<h4>Datanomi</h4>
-					<h5>Business College Helsinki</h5>
-					<p>
-						Vocational upper secondary qualification in Information and
-						Communications Technology, competence area in Software development
-					</p>
+					<Heading.LevelBoundary levelOverride={3}>
+						<Heading.H>2017-2018</Heading.H>
+						<Heading.LevelBoundary>
+							<Heading.H>Datanomi</Heading.H>
+							<Heading.LevelBoundary>
+								<Heading.H>Business College Helsinki</Heading.H>
+								<p>
+									Vocational upper secondary qualification in Information and
+									Communications Technology, competence area in Software
+									development
+								</p>
+							</Heading.LevelBoundary>
+						</Heading.LevelBoundary>
+					</Heading.LevelBoundary>
 				</StyledEducationCard>
 			</EducationCardWrapper>
 			<EducationCardWrapper>
 				<StyledEducationCard>
-					<h3>2006-2009</h3>
-					<h4>Tradenomi</h4>
-					<h5>Haaga-Helia University of Applied Sciences</h5>
-					<p>
-						Bachelor of Business Administration, Degree Programme in Business
-						Management
-					</p>
+					<Heading.LevelBoundary levelOverride={3}>
+						<Heading.H>2006-2009</Heading.H>
+						<Heading.LevelBoundary>
+							<Heading.H>Tradenomi</Heading.H>
+							<Heading.LevelBoundary>
+								<Heading.H>
+									Haaga-Helia University of Applied Sciences
+								</Heading.H>
+								<p>
+									Bachelor of Business Administration, Degree Programme in
+									Business Management
+								</p>
+							</Heading.LevelBoundary>
+						</Heading.LevelBoundary>
+					</Heading.LevelBoundary>
 				</StyledEducationCard>
 			</EducationCardWrapper>
 			<EducationCardWrapper>
 				<StyledEducationCard>
-					<h3>1996-1998</h3>
-					<h4>Tietokoneasentaja</h4>
-					<h5>Nurmijärven ammattikoulu</h5>
-					<p>
-						Vocational Qualification in Information and Telecommunications
-						Technology, ICT Technician
-					</p>
+					<Heading.LevelBoundary levelOverride={3}>
+						<Heading.H>1996-1998</Heading.H>
+						<Heading.LevelBoundary>
+							<Heading.H>Tietokoneasentaja</Heading.H>
+							<Heading.LevelBoundary>
+								<Heading.H>Nurmijärven ammattikoulu</Heading.H>
+								<p>
+									Vocational Qualification in Information and Telecommunications
+									Technology, ICT Technician
+								</p>
+							</Heading.LevelBoundary>
+						</Heading.LevelBoundary>
+					</Heading.LevelBoundary>
 				</StyledEducationCard>
 			</EducationCardWrapper>
 			<EducationCardWrapper>
 				<StyledEducationCard>
-					<h3>1995-1996</h3>
-					<h4>Deutsche Sprachprüfung I</h4>
-					<h5>
-						Sprachen- und Dolmetscher-Institut <br />
-						München
-					</h5>
-					<p>Deutsch als Fremdsprache</p>
+					<Heading.LevelBoundary levelOverride={3}>
+						<Heading.H>1995-1996</Heading.H>
+						<Heading.LevelBoundary>
+							<Heading.H>Deutsche Sprachprüfung I</Heading.H>
+							<Heading.LevelBoundary>
+								<Heading.H>
+									Sprachen- und Dolmetscher-Institut <br />
+									München
+								</Heading.H>
+								<p>Deutsch als Fremdsprache</p>
+							</Heading.LevelBoundary>
+						</Heading.LevelBoundary>
+					</Heading.LevelBoundary>
 				</StyledEducationCard>
 			</EducationCardWrapper>
 		</ThemeProvider>

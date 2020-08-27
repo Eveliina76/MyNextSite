@@ -1,6 +1,7 @@
 import { myTheme } from '../styles/GlobalStyle'
 import styled, { ThemeProvider } from 'styled-components'
 import { breakpoint } from 'styled-components-breakpoint'
+import { Heading } from '@tenon-io/tenon-ui'
 
 const SkillsCardWrapper = styled.div`
 	margin: 1.875rem 0;
@@ -27,7 +28,7 @@ const StyledSkillsCard = styled.div`
 		color: ${(props) => props.theme.colorCerise};
 		margin: 0.625rem 0;
 	}
-	h4 {
+	p {
 		font-family: ${(props) => props.theme.font};
 		font-size: ${(props) => props.theme.h4FontSize};
 		color: ${(props) => props.theme.colorSpaceCadet};
@@ -76,56 +77,60 @@ const SkillsCard = () => {
 		<ThemeProvider theme={myTheme}>
 			<SkillsCardWrapper>
 				<StyledSkillsCard>
-					<h3>Skills</h3>
-					<SkillsList>
-						<SkillsItem>
-							<StyledImage src="/dot.svg" />
-							<h4>HTML, CSS, React</h4>
-						</SkillsItem>
-						<SkillsItem>
-							<StyledImage src="/dot.svg" />
-							<h4>Scrum</h4>
-						</SkillsItem>
-						<SkillsItem>
-							<StyledImage src="/dot.svg" />
-							<h4>Problem Solving</h4>
-						</SkillsItem>
-						<SkillsItem>
-							<StyledImage src="/dot.svg" />
-							<h4>Organization and planning</h4>
-						</SkillsItem>
-						<SkillsItem>
-							<StyledImage src="/dot.svg" />
-							<h4>Empathy and Humor</h4>
-						</SkillsItem>
-						<SkillsItem>
-							<StyledImage src="/dot.svg" />
-							<h4>Collaboration and Team Work</h4>
-						</SkillsItem>
-						<SkillsItem>
-							<StyledImage src="/dot.svg" />
-							<h4>Motivation to learn</h4>
-						</SkillsItem>
-						<SkillsItem>
-							<StyledImage src="/dot.svg" />
-							<h4>Verbal and Written Communication</h4>
-						</SkillsItem>
-					</SkillsList>
-					<h3>Languages</h3>
-					<LanguageList>
-						<SkillsItem>
-							<StyledImage src="/dot.svg" />
-							<h4>Finnish</h4>
-						</SkillsItem>
-						<SkillsItem>
-							<StyledImage src="/dot.svg" />
-							<h4>English</h4>
-						</SkillsItem>
-						<SkillsItem>
-							<StyledImage src="/dot.svg" />
-							<h4>German</h4>
-						</SkillsItem>
-					</LanguageList>
+					<Heading.LevelBoundary levelOverride={3}>
+						<Heading.H>Skills</Heading.H>
+						<SkillsList>
+							<SkillsItem>
+								<StyledImage src="/dot.svg" />
+								<p>HTML, CSS, React</p>
+							</SkillsItem>
+							<SkillsItem>
+								<StyledImage src="/dot.svg" />
+								<p>Scrum</p>
+							</SkillsItem>
+							<SkillsItem>
+								<StyledImage src="/dot.svg" />
+								<p>Problem Solving</p>
+							</SkillsItem>
+							<SkillsItem>
+								<StyledImage src="/dot.svg" />
+								<p>Organization and planning</p>
+							</SkillsItem>
+							<SkillsItem>
+								<StyledImage src="/dot.svg" />
+								<p>Empathy and Humor</p>
+							</SkillsItem>
+							<SkillsItem>
+								<StyledImage src="/dot.svg" />
+								<p>Collaboration and Team Work</p>
+							</SkillsItem>
+							<SkillsItem>
+								<StyledImage src="/dot.svg" />
+								<p>Motivation to learn</p>
+							</SkillsItem>
+							<SkillsItem>
+								<StyledImage src="/dot.svg" />
+								<p>Verbal and Written Communication</p>
+							</SkillsItem>
+						</SkillsList>
+					</Heading.LevelBoundary>
+					<Heading.LevelBoundary levelOverride={3}>
+						<Heading.H>Languages</Heading.H>
+						<LanguageList>
+							<SkillsItem>
+								<StyledImage src="/dot.svg" />
+								<p>Finnish</p>
+							</SkillsItem>
+							<SkillsItem>
+								<StyledImage src="/dot.svg" />
+								<p>English</p>
+							</SkillsItem>
+							<SkillsItem>
+								<StyledImage src="/dot.svg" />
+								<p>German</p>
+							</SkillsItem>
+						</LanguageList>
+					</Heading.LevelBoundary>
 				</StyledSkillsCard>
 			</SkillsCardWrapper>
 		</ThemeProvider>
