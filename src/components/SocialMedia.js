@@ -30,29 +30,24 @@ const SocialMedia = () => {
 	return (
 		<ThemeProvider theme={myTheme}>
 			<SocialMediaWrapper>
-				<a
+				<StyledLink
 					href="https://www.linkedin.com/in/eveliina-champagne/"
 					target="blank"
 				>
-					<StyledLink>
-						<StyledImage src="/logoLinkedin.svg" alt="linkedin logo" />
-					</StyledLink>
-				</a>
-				<a href="https://github.com/Eveliina76" target="blank">
-					<StyledLink>
-						<StyledImage src="/logoGithub.svg" alt="github logo" />
-					</StyledLink>
-				</a>
-				<a href="https://www.instagram.com/eveliina76/" target="blank">
-					<StyledLink>
-						<StyledImage src="/logoInstagram.svg" alt="instagram logo" />
-					</StyledLink>
-				</a>
-				<a href="https://trekkingtailwaggers.wordpress.com/" target="blank">
-					<StyledLink>
-						<StyledImage src="/logoBlog.svg" alt="wordpress logo" />
-					</StyledLink>
-				</a>
+					<StyledImage src="/logoLinkedin.svg" alt="linkedin logo" />
+				</StyledLink>
+				<StyledLink href="https://github.com/Eveliina76" target="blank">
+					<StyledImage src="/logoGithub.svg" alt="github logo" />
+				</StyledLink>
+				<StyledLink href="https://www.instagram.com/eveliina76/" target="blank">
+					<StyledImage src="/logoInstagram.svg" alt="instagram logo" />
+				</StyledLink>
+				<StyledLink
+					href="https://trekkingtailwaggers.wordpress.com/"
+					target="blank"
+				>
+					<StyledImage src="/logoBlog.svg" alt="wordpress logo" />
+				</StyledLink>
 			</SocialMediaWrapper>
 		</ThemeProvider>
 	)
