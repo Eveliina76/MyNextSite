@@ -1,6 +1,6 @@
-import styled, { ThemeProvider } from "styled-components";
-import { breakpoint } from "styled-components-breakpoint";
-import { myTheme } from "../styles/GlobalStyle";
+import styled, { ThemeProvider } from 'styled-components';
+import { breakpoint } from 'styled-components-breakpoint';
+import { myTheme } from '../styles/GlobalStyle';
 
 const PageTitleWrapper = styled.div`
   background: ${(props) => props.theme.colorWhite};
@@ -8,7 +8,7 @@ const PageTitleWrapper = styled.div`
   flex-direction: row;
   margin-left: 0;
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     display: flex;
     align-items: center;
   `}
@@ -18,7 +18,7 @@ const StyledName = styled.div`
   font-family: ${(props) => props.theme.titleFont};
   font-size: ${(props) => props.theme.h3FontSize};
   padding-right: 0.625rem;
-  ${breakpoint("xs")`
+  ${breakpoint('xs')`
     font-size: ${(props) => props.theme.h4FontSize};
   `}
 `;

@@ -1,7 +1,7 @@
-import styled, { ThemeProvider } from "styled-components";
-import { breakpoint } from "styled-components-breakpoint";
-import { Heading } from "@tenon-io/tenon-ui";
-import { myTheme } from "../styles/GlobalStyle";
+import styled, { ThemeProvider } from 'styled-components';
+import { breakpoint } from 'styled-components-breakpoint';
+import { Heading } from '@tenon-io/tenon-ui';
+import { myTheme } from '../styles/GlobalStyle';
 
 const EducationCardWrapper = styled.div`
   margin-bottom: 15px;
@@ -45,7 +45,7 @@ const StyledEducationCard = styled.div`
     color: ${(props) => props.theme.colorSpaceCadet};
     margin: 0;
   }
-  ${breakpoint("md")`
+  ${breakpoint('md')`
   grid-template-columns: 100%;
   grid-template-rows: 15% 20% 15% 50%;
   width: 650px;
@@ -68,7 +68,7 @@ const StyledEducationCard = styled.div`
     margin: 10px 0;
 	}
   `}
-  ${breakpoint("lg")`
+  ${breakpoint('lg')`
   grid-template-columns: 40% 60%;
   grid-template-rows: 15% 20% 25% 40%;
   width: 800px;
@@ -91,7 +91,7 @@ const StyledEducationCard = styled.div`
     grid-row-start: 1;
   }
   `}
-  ${breakpoint("xl")`
+  ${breakpoint('xl')`
   h3 {
     grid-column-start: 1;
     grid-row-start: 1;

@@ -1,11 +1,11 @@
-import styled, { ThemeProvider } from "styled-components";
-import { Heading } from "@tenon-io/tenon-ui";
-import Layout from "../components/Layout";
-import { myTheme } from "../styles/GlobalStyle";
+import styled, { ThemeProvider } from 'styled-components';
+import { Heading } from '@tenon-io/tenon-ui';
+import Layout from '../components/Layout';
+import { myTheme } from '../styles/GlobalStyle';
 
-import WorkCard from "../components/WorkCard";
-import EducationCard from "../components/EducationCard";
-import SkillsCard from "../components/SkillsCard";
+import WorkCard from '../components/WorkCard';
+import EducationCard from '../components/EducationCard';
+import SkillsCard from '../components/SkillsCard';
 
 const ResumeWrapper = styled.div`
   height: calc(100vh - 12.5rem);

@@ -1,7 +1,7 @@
-import styled, { ThemeProvider } from "styled-components";
-import { breakpoint } from "styled-components-breakpoint";
-import { Heading } from "@tenon-io/tenon-ui";
-import { myTheme } from "../styles/GlobalStyle";
+import styled, { ThemeProvider } from 'styled-components';
+import { breakpoint } from 'styled-components-breakpoint';
+import { Heading } from '@tenon-io/tenon-ui';
+import { myTheme } from '../styles/GlobalStyle';
 
 const WorkCardWrapper = styled.div`
   margin-bottom: 0.9375rem;
@@ -46,7 +46,7 @@ const StyledWorkCard = styled.div`
     color: ${(props) => props.theme.colorSpaceCadet};
     margin: 0.625rem 0;
   }
-  ${breakpoint("md")`
+  ${breakpoint('md')`
   grid-template-columns: 100%;
   grid-template-rows: 15% 10% 10% 65%;
   width: 40.625rem;
@@ -70,7 +70,7 @@ const StyledWorkCard = styled.div`
     margin: 1.25rem 0;
 	}
   `}
-  ${breakpoint("lg")`
+  ${breakpoint('lg')`
   grid-template-columns: 40% 60%;
   grid-template-rows: 20% 15% 15% 40%;
   width: 50rem;
@@ -95,7 +95,7 @@ const StyledWorkCard = styled.div`
     margin: 0;
   }
   `}
-  ${breakpoint("xl")`
+  ${breakpoint('xl')`
   grid-template-columns: 40% 60%;
   grid-template-rows: 20% 15% 15% 40%;
   h3 {

@@ -1,9 +1,9 @@
-import styled, { ThemeProvider } from "styled-components";
-import { breakpoint } from "styled-components-breakpoint";
-import { myTheme } from "../styles/GlobalStyle";
+import styled, { ThemeProvider } from 'styled-components';
+import { breakpoint } from 'styled-components-breakpoint';
+import { myTheme } from '../styles/GlobalStyle';
 
-import ContentText from "./ContentText";
-import ContentImage from "./ContentImage";
+import ContentText from './ContentText';
+import ContentImage from './ContentImage';
 
 const ContentMainWrapper = styled.div`
   display: grid;
@@ -11,7 +11,7 @@ const ContentMainWrapper = styled.div`
   height: calc(100vh - 12.5rem);
   overflow-y: scroll;
   background: ${(props) => props.theme.colorWhite};
-  ${breakpoint("md")`
+  ${breakpoint('md')`
 		grid-template-columns: 40% 60%;
   `}
 `;

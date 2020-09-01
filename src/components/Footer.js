@@ -1,7 +1,7 @@
-import styled, { ThemeProvider } from "styled-components";
-import { breakpoint } from "styled-components-breakpoint";
-import { myTheme } from "../styles/GlobalStyle";
-import SocialMedia from "./SocialMedia";
+import styled, { ThemeProvider } from 'styled-components';
+import { breakpoint } from 'styled-components-breakpoint';
+import { myTheme } from '../styles/GlobalStyle';
+import SocialMedia from './SocialMedia';
 
 const FooterWrapper = styled.div`
   display: grid;
@@ -15,7 +15,7 @@ const FooterWrapper = styled.div`
   background: ${(props) => props.theme.colorWhite};
   padding: 0.125rem 2.5rem;
   margin: 0;
-  ${breakpoint("md")`
+  ${breakpoint('md')`
   display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 60% 40%;
@@ -31,7 +31,7 @@ const StyledCopyright = styled.div`
   p {
     margin: 0.625rem 0 0.625rem 0;
   }
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     align-self: end;
 		text-align: left;
 		padding-bottom: 0;
@@ -50,7 +50,7 @@ const CreditLink = styled.a`
   text-align: center;
   text-decoration: none;
   padding-bottom: 0.5rem;
-  ${breakpoint("md")`
+  ${breakpoint('md')`
   grid-column-start: 2;
 	grid-row-start: 2;
 	align-self: flex-start;

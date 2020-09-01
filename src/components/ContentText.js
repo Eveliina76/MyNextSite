@@ -1,7 +1,7 @@
-import styled, { ThemeProvider } from "styled-components";
-import { breakpoint } from "styled-components-breakpoint";
-import { Heading } from "@tenon-io/tenon-ui";
-import { myTheme } from "../styles/GlobalStyle";
+import styled, { ThemeProvider } from 'styled-components';
+import { breakpoint } from 'styled-components-breakpoint';
+import { Heading } from '@tenon-io/tenon-ui';
+import { myTheme } from '../styles/GlobalStyle';
 
 const ContentTextWrapper = styled.div`
   background: ${(props) => props.theme.colorWhite};
@@ -9,15 +9,15 @@ const ContentTextWrapper = styled.div`
   width: auto;
   padding: 0.625rem 1.25rem 0.625rem 1.5625rem;
   margin-bottom: 0.9375rem;
-  ${breakpoint("md")`
+  ${breakpoint('md')`
 		padding: 1.5625rem 1.25rem 0 5.625rem;
 		margin-bottom: 0;
   `}
-  ${breakpoint("lg")`
+  ${breakpoint('lg')`
     width: 33.125rem;
     padding: 9.375rem 0 0 6.25rem;
   `}
-  ${breakpoint("xl")`
+  ${breakpoint('xl')`
 		width: 40.625rem;
 		padding: 0 0 0 9.375rem;
   `} 

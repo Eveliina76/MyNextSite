@@ -1,8 +1,8 @@
-import React from "react";
-import { GlobalStyle } from "../styles/GlobalStyle";
+import React from 'react';
+import { GlobalStyle } from '../styles/GlobalStyle';
 
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from './Header';
+import Footer from './Footer';
 
 const Layout = (props) => {
   return (

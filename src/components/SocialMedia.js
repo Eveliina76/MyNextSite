@@ -1,6 +1,6 @@
-import styled, { ThemeProvider } from "styled-components";
-import { breakpoint } from "styled-components-breakpoint";
-import { myTheme } from "../styles/GlobalStyle";
+import styled, { ThemeProvider } from 'styled-components';
+import { breakpoint } from 'styled-components-breakpoint';
+import { myTheme } from '../styles/GlobalStyle';
 
 const SocialMediaWrapper = styled.div`
   display: flex;
@@ -8,7 +8,7 @@ const SocialMediaWrapper = styled.div`
   justify-content: center;
   align-items: center;
   background: ${(props) => props.theme.colorWhite};
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     grid-column-start: 2;
     justify-content: flex-end;
     margin-left: 1.5rem;
@@ -19,7 +19,7 @@ const StyledLink = styled.a``;
 const StyledImage = styled.img`
   height: 2.3rem;
   margin: 0 0.5rem;
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     height: 2.1875rem;
 		margin: 0 0.625rem;
   `}

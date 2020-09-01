@@ -1,6 +1,6 @@
-import App from "next/app";
-import { ThemeProvider } from "styled-components";
-import { myTheme } from "../styles/GlobalStyle";
+import App from 'next/app';
+import { ThemeProvider } from 'styled-components';
+import { myTheme } from '../styles/GlobalStyle';
 // import '@tenon-io/tenon-ui/lib/styles/tenon-ui.css'
 
 export default class MyApp extends App {

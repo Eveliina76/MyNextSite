@@ -1,7 +1,7 @@
-import { breakpoint } from "styled-components-breakpoint";
-import Link from "next/link";
-import styled, { ThemeProvider } from "styled-components";
-import { myTheme } from "../styles/GlobalStyle";
+import { breakpoint } from 'styled-components-breakpoint';
+import Link from 'next/link';
+import styled, { ThemeProvider } from 'styled-components';
+import { myTheme } from '../styles/GlobalStyle';
 
 const StyledNavBar = styled.div`
   display: flex;
@@ -12,7 +12,7 @@ const NavList = styled.ul`
   display: none;
   font-family: ${(props) => props.theme.font};
   list-style-type: none;
-  ${breakpoint("sm")`
+  ${breakpoint('sm')`
     display: flex;
     flex-flow: row nowrap;
     margin-top: 1rem;
@@ -30,7 +30,7 @@ const StyledLink = styled.a`
     color: ${(props) => props.theme.colorCerise};
     text-decoration: underline;
   }
-  ${breakpoint("sm")`
+  ${breakpoint('sm')`
     font-size: ${(props) => props.theme.h4FontSize};
     margin-right: 2rem;
   `}

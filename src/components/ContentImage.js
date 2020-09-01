@@ -1,13 +1,13 @@
-import styled, { ThemeProvider } from "styled-components";
-import { breakpoint } from "styled-components-breakpoint";
-import { myTheme } from "../styles/GlobalStyle";
-import ImageCard from "./ImageCard";
+import styled, { ThemeProvider } from 'styled-components';
+import { breakpoint } from 'styled-components-breakpoint';
+import { myTheme } from '../styles/GlobalStyle';
+import ImageCard from './ImageCard';
 
 const ContentImageWrapper = styled.div`
   display: flex;
   background: ${(props) => props.theme.colorIndependence};
   height: 20rem;
-  ${breakpoint("md")`
+  ${breakpoint('md')`
 		position: relative;
 		width: auto;
 		height: auto;

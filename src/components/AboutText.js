@@ -1,7 +1,7 @@
-import { breakpoint } from "styled-components-breakpoint";
-import styled, { ThemeProvider } from "styled-components";
-import { Heading } from "@tenon-io/tenon-ui";
-import { myTheme } from "../styles/GlobalStyle";
+import { breakpoint } from 'styled-components-breakpoint';
+import styled, { ThemeProvider } from 'styled-components';
+import { Heading } from '@tenon-io/tenon-ui';
+import { myTheme } from '../styles/GlobalStyle';
 
 const TextWrapper = styled.div`
   display: flex;
@@ -19,7 +19,7 @@ const TextWrapper = styled.div`
     font-size: ${(props) => props.theme.textFontSize};
     margin-bottom: 0.1rem;
   }
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     margin-top: 2rem;
     padding: 0 1.5rem 1rem 0;
     overflow-y: scroll;
@@ -30,11 +30,11 @@ const TextWrapper = styled.div`
 		  background-color: ${(props) => props.theme.colorindependece};
     }
   `}
-  ${breakpoint("lg")`
+  ${breakpoint('lg')`
     margin-top: 4rem;
     height: auto;
   `}
-	${breakpoint("xl")`
+	${breakpoint('xl')`
 		display: flex;
     flex-direction: column;
     height: 600px;
@@ -65,7 +65,7 @@ const AboutText = () => {
           previous role as a sustainability lead to recover from depression
           caused by burn out. I knew that I could not continue doing what I did.
           During my year off I traveled around Europe with my two dogs. You can
-          read about the trip from my blog{" "}
+          read about the trip from my blog{' '}
           <a href="https://trekkingtailwaggers.wordpress.com/" target="blank">
             <StyledLink>Trekking Tail Waggers.</StyledLink>
           </a>
@@ -102,19 +102,19 @@ const AboutText = () => {
         <p>
           I shared my story in the second event of Mimmit koodaa, hoping to
           encourage other women to pursue their dream of working in the ICT
-          industry. You can watch it in Mimmit koodaa{" "}
+          industry. You can watch it in Mimmit koodaa{' '}
           <a
             href="https://tv.streamfabriken.com/mimmit-koodaa-syksy-2018-launch"
             target="blank"
           >
             <StyledLink>website.</StyledLink>
-          </a>{" "}
+          </a>{' '}
           It is in Finnish and starts around 1:05:00. I also told my story in
-          Fraktio’s{" "}
+          Fraktio’s{' '}
           <a href="https://www.youtube.com/watch?v=qB_cA363Ofg" target="blank">
             <StyledLink>Perjantai presis</StyledLink>
-          </a>{" "}
-          and in Duunitori{" "}
+          </a>{' '}
+          and in Duunitori{' '}
           <a
             href="https://duunitori.fi/tyoelama/mimmit-koodaa-eveliina-uratarina"
             target="blank"

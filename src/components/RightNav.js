@@ -1,7 +1,7 @@
-import styled, { ThemeProvider } from "styled-components";
-import Link from "next/link";
-import { breakpoint } from "styled-components-breakpoint";
-import { myTheme } from "../styles/GlobalStyle";
+import styled, { ThemeProvider } from 'styled-components';
+import Link from 'next/link';
+import { breakpoint } from 'styled-components-breakpoint';
+import { myTheme } from '../styles/GlobalStyle';
 
 const StyledRightNav = styled.ul`
   display: flex;
@@ -9,10 +9,10 @@ const StyledRightNav = styled.ul`
   background-color: ${(props) => props.theme.colorCerise};
   font-family: ${(props) => props.theme.font};
   list-style-type: none;
-  ${breakpoint("xs")`
+  ${breakpoint('xs')`
     flex-flow: column nowrap;
     position: fixed;
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     top: 0;
     right: 0;
     height: 100%;
@@ -23,7 +23,7 @@ const StyledRightNav = styled.ul`
     padding: 3.125rem 0 0 0;
     transition: transform 0.3s ease-in-out;
   `}
-  ${breakpoint("sm")`
+  ${breakpoint('sm')`
     display: none;
   `}
 `;

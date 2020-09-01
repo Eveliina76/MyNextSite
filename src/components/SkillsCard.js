@@ -1,7 +1,7 @@
-import styled, { ThemeProvider } from "styled-components";
-import { breakpoint } from "styled-components-breakpoint";
-import { Heading } from "@tenon-io/tenon-ui";
-import { myTheme } from "../styles/GlobalStyle";
+import styled, { ThemeProvider } from 'styled-components';
+import { breakpoint } from 'styled-components-breakpoint';
+import { Heading } from '@tenon-io/tenon-ui';
+import { myTheme } from '../styles/GlobalStyle';
 
 const SkillsCardWrapper = styled.div`
   margin: 1.875rem 0;
@@ -34,11 +34,11 @@ const StyledSkillsCard = styled.div`
     color: ${(props) => props.theme.colorSpaceCadet};
     margin: 0.625rem 0;
   }
-  ${breakpoint("md")`
+  ${breakpoint('md')`
   width: 40.625rem;
   border-radius: 0.625rem 0.625rem;
   `}
-  ${breakpoint("lg")`
+  ${breakpoint('lg')`
     width: 50rem;
   `}
 `;
@@ -51,7 +51,7 @@ const SkillsList = styled.ul`
   list-style-type: none;
   margin-top: 0.5rem;
   padding-left: 0.625rem;
-  ${breakpoint("md")`
+  ${breakpoint('md')`
   padding-left: 2.5rem;
   `}
 `;
@@ -63,7 +63,7 @@ const LanguageList = styled.ul`
   list-style-type: none;
   margin-top: 0.5rem;
   padding-left: 0.625rem;
-  ${breakpoint("md")`
+  ${breakpoint('md')`
   padding-left: 2.5rem;
   `}
 `;
