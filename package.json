@@ -1,21 +1,35 @@
 {
-  "name": "with-styled-components",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@types/styled-components": "^5.1.1",
-    "next": "latest",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
-    "styled-components": "^5.0.0",
-    "styled-components-breakpoint": "^3.0.0-preview.20"
-  },
-  "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0"
-  },
-  "license": "ISC"
+	"name": "with-styled-components",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start",
+		"lint": "eslint ./components/** ./pages/** -c .eslintrc.json --ext js,jsx",
+		"lint-fix": "eslint ./components/** ./pages/** -c .eslintrc.json --fix --ext js,jsx",
+		"eslint-check": "eslint --print-config src/pages/index.js | eslint-config-prettier-check"
+	},
+	"dependencies": {
+		"@tenon-io/tenon-ui": "^1.1.1",
+		"@types/styled-components": "^5.1.1",
+		"next": "latest",
+		"react": "^16.8.0",
+		"react-dom": "^16.8.0",
+		"styled-components": "^5.0.0",
+		"styled-components-breakpoint": "^3.0.0-preview.20"
+	},
+	"devDependencies": {
+		"babel-eslint": "^10.1.0",
+		"babel-plugin-styled-components": "^1.8.0",
+		"eslint": "^7.7.0",
+		"eslint-config-airbnb": "^18.2.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-jsx-a11y": "^6.3.1",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-react": "^7.20.6",
+		"eslint-plugin-react-hooks": "^4.1.0",
+		"prettier": "^2.1.1"
+	},
+	"license": "ISC"
 }
