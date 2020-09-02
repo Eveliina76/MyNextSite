@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "year": 2018,
+    "title": "Datanomi",
+    "school": "Business College Helsinki",
+    "description":
+      "Vocational upper secondary qualification in Information and Communications Technology, competence area in Software development"
+  },
+  {
+    "id": 2,
+    "year": 2009,
+    "title": "Tradenomi",
+    "school": "Haaga-Helia University of Applied Sciences",
+    "description":
+      "Bachelor of Business Administration, Degree Programme in Business Management"
+  },
+  {
+    "id": 3,
+    "year": 1998,
+    "title": "Tietokoneasentaja",
+    "school": "Nurmijärven ammattikoulu",
+    "description":
+      "Vocational Qualification in Information and Telecommunications Technology, ICT Technician"
+  },
+  {
+    "id": 4,
+    "year": 1996,
+    "title": "Deutsche Sprachprüfung I",
+    "school": "Sprachen- und Dolmetscher-Institut München",
+    "description": "Deutsch als Fremdsprache"
+  }
+]

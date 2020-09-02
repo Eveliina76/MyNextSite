@@ -115,75 +115,18 @@ const StyledEducationCard = styled.div`
   `}
 `;
 
-const EducationCard = () => {
+const EducationCard = (education) => {
   return (
     <ThemeProvider theme={myTheme}>
       <EducationCardWrapper>
         <StyledEducationCard>
           <Heading.LevelBoundary levelOverride={3}>
-            <Heading.H>2017-2018</Heading.H>
+            <Heading.H>{education.year}</Heading.H>
             <Heading.LevelBoundary>
-              <Heading.H>Datanomi</Heading.H>
+              <Heading.H>{education.title}</Heading.H>
               <Heading.LevelBoundary>
-                <Heading.H>Business College Helsinki</Heading.H>
-                <p>
-                  Vocational upper secondary qualification in Information and
-                  Communications Technology, competence area in Software
-                  development
-                </p>
-              </Heading.LevelBoundary>
-            </Heading.LevelBoundary>
-          </Heading.LevelBoundary>
-        </StyledEducationCard>
-      </EducationCardWrapper>
-      <EducationCardWrapper>
-        <StyledEducationCard>
-          <Heading.LevelBoundary levelOverride={3}>
-            <Heading.H>2006-2009</Heading.H>
-            <Heading.LevelBoundary>
-              <Heading.H>Tradenomi</Heading.H>
-              <Heading.LevelBoundary>
-                <Heading.H>
-                  Haaga-Helia University of Applied Sciences
-                </Heading.H>
-                <p>
-                  Bachelor of Business Administration, Degree Programme in
-                  Business Management
-                </p>
-              </Heading.LevelBoundary>
-            </Heading.LevelBoundary>
-          </Heading.LevelBoundary>
-        </StyledEducationCard>
-      </EducationCardWrapper>
-      <EducationCardWrapper>
-        <StyledEducationCard>
-          <Heading.LevelBoundary levelOverride={3}>
-            <Heading.H>1996-1998</Heading.H>
-            <Heading.LevelBoundary>
-              <Heading.H>Tietokoneasentaja</Heading.H>
-              <Heading.LevelBoundary>
-                <Heading.H>Nurmijärven ammattikoulu</Heading.H>
-                <p>
-                  Vocational Qualification in Information and Telecommunications
-                  Technology, ICT Technician
-                </p>
-              </Heading.LevelBoundary>
-            </Heading.LevelBoundary>
-          </Heading.LevelBoundary>
-        </StyledEducationCard>
-      </EducationCardWrapper>
-      <EducationCardWrapper>
-        <StyledEducationCard>
-          <Heading.LevelBoundary levelOverride={3}>
-            <Heading.H>1995-1996</Heading.H>
-            <Heading.LevelBoundary>
-              <Heading.H>Deutsche Sprachprüfung I</Heading.H>
-              <Heading.LevelBoundary>
-                <Heading.H>
-                  Sprachen- und Dolmetscher-Institut <br />
-                  München
-                </Heading.H>
-                <p>Deutsch als Fremdsprache</p>
+                <Heading.H>{education.school}</Heading.H>
+                <p>{education.description}</p>
               </Heading.LevelBoundary>
             </Heading.LevelBoundary>
           </Heading.LevelBoundary>
