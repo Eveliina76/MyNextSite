@@ -121,140 +121,18 @@ const StyledWorkCard = styled.div`
   `}
 `;
 
-const WorkCard = () => {
+const WorkCard = (work) => {
   return (
     <ThemeProvider theme={myTheme}>
       <WorkCardWrapper>
         <StyledWorkCard>
           <Heading.LevelBoundary levelOverride={3}>
-            <Heading.H>2018-Present</Heading.H>
+            <Heading.H>{work.years}</Heading.H>
             <Heading.LevelBoundary>
-              <Heading.H>Web Developer</Heading.H>
+              <Heading.H>{work.title}</Heading.H>
               <Heading.LevelBoundary>
-                <Heading.H>Wunder Finland</Heading.H>
-                <p>
-                  In my current job I am working as Front End Developer. I'm
-                  making sure the designs get implemented as precisely for the
-                  web as possible. I enjoy using React and of course CSS. I have
-                  also some experience with Drupal and I'm familiar with Gatsby
-                  as well. In the latest project that I worked with, I was
-                  responsible for implementing the design for a complex
-                  e-commerce site.
-                </p>
-              </Heading.LevelBoundary>
-            </Heading.LevelBoundary>
-          </Heading.LevelBoundary>
-        </StyledWorkCard>
-      </WorkCardWrapper>
-      <WorkCardWrapper>
-        <StyledWorkCard>
-          <Heading.LevelBoundary levelOverride={3}>
-            <Heading.H>2015-2018</Heading.H>
-            <Heading.LevelBoundary>
-              <Heading.H>Sustainability Lead</Heading.H>
-              <Heading.LevelBoundary>
-                <Heading.H>Fujitsu Finland</Heading.H>
-                <p>
-                  I worked on enhanching environmental responsibility in Fujitsu
-                  Finland and taking part of the Europe wide internal
-                  sustainability program. Fujitsu was applying for ISO 14001
-                  certification to cover all the European businesses and I was
-                  involved in that work. As I had suggested for the management,
-                  Fujitsu Finland started using renevable energy in all it's
-                  facilities including data centers as well as offices and
-                  compensating part of flights emissions.
-                </p>
-              </Heading.LevelBoundary>
-            </Heading.LevelBoundary>
-          </Heading.LevelBoundary>
-        </StyledWorkCard>
-      </WorkCardWrapper>
-      <WorkCardWrapper>
-        <StyledWorkCard>
-          <Heading.LevelBoundary levelOverride={3}>
-            <Heading.H>2013-2015</Heading.H>
-            <Heading.LevelBoundary>
-              <Heading.H>CSR Manager</Heading.H>
-              <Heading.LevelBoundary>
-                <Heading.H>Fujitsu Finland</Heading.H>
-                <p>
-                  In addition to my responsibilities in my previous role as
-                  Environmental Specialist, I was also responsible for
-                  collecting and reporting data for all the Nordic companies. I
-                  worked on getting Fujitsu Finland to join global internal
-                  Sustainability program and arranged workshop on corporate
-                  social responsibility covering all the aspects of CSR, not
-                  only environment. I was implementing a tool gather the data on
-                  sustainability. I also attended a global internal
-                  sustainability meeting in Japan representing the Fujitsu
-                  Nordic.
-                </p>
-              </Heading.LevelBoundary>
-            </Heading.LevelBoundary>
-          </Heading.LevelBoundary>
-        </StyledWorkCard>
-      </WorkCardWrapper>
-      <WorkCardWrapper>
-        <StyledWorkCard>
-          <Heading.LevelBoundary levelOverride={3}>
-            <Heading.H>2010-2013</Heading.H>
-            <Heading.LevelBoundary>
-              <Heading.H>Environmental Specialist</Heading.H>
-              <Heading.LevelBoundary>
-                <Heading.H>Fujitsu Finland</Heading.H>
-                <p>
-                  I was responsible for implementing company wide ISO 14001
-                  standard certification as well as getting Fujitsu Finland head
-                  office the WWF Green Office label. I created environmental
-                  measurements in various areas of our facilities and business,
-                  and collected data accordingly. I also created and maintained
-                  intra sites that included information about recycling waste,
-                  energy use, water consumption etc. I wrote a blog and held
-                  presentations as well as arranged events around environmental
-                  responsibility. I also kept management updated and presented
-                  them various ways how to make company more sustainable.
-                </p>
-              </Heading.LevelBoundary>
-            </Heading.LevelBoundary>
-          </Heading.LevelBoundary>
-        </StyledWorkCard>
-      </WorkCardWrapper>
-      <WorkCardWrapper>
-        <StyledWorkCard>
-          <Heading.LevelBoundary levelOverride={3}>
-            <Heading.H>2009 May to September</Heading.H>
-            <Heading.LevelBoundary>
-              <Heading.H>CSR Trainee</Heading.H>
-              <Heading.LevelBoundary>
-                <Heading.H>Iittala Group</Heading.H>
-                <p>
-                  I did five months training programm related to my studies in
-                  Haaga-Helia for Ittala Group. I collected data and wrote texts
-                  for their future Corporate Social Responsibility report. I
-                  also created waste recycling instructions for their head
-                  office.
-                </p>
-              </Heading.LevelBoundary>
-            </Heading.LevelBoundary>
-          </Heading.LevelBoundary>
-        </StyledWorkCard>
-      </WorkCardWrapper>
-      <WorkCardWrapper>
-        <StyledWorkCard>
-          <Heading.LevelBoundary levelOverride={3}>
-            <Heading.H>1997-2010</Heading.H>
-            <Heading.LevelBoundary>
-              <Heading.H>Quality coordinator and other roles</Heading.H>
-              <Heading.LevelBoundary>
-                <Heading.H>ICL, later Fujitsu Finland</Heading.H>
-                <p>
-                  I started my career in IT industry by installing software and
-                  hardware to computers. Later I worked with the customer orders
-                  making sure the information on them was correct and they could
-                  be processed and equipment installed correctly. I also worked
-                  with customer reclamations and placing new orders through our
-                  SAP system.
-                </p>
+                <Heading.H>{work.employer}</Heading.H>
+                <p>{work.description}</p>
               </Heading.LevelBoundary>
             </Heading.LevelBoundary>
           </Heading.LevelBoundary>

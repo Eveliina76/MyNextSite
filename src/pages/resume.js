@@ -6,6 +6,8 @@ import { myTheme } from '../styles/GlobalStyle';
 import WorkCard from '../components/WorkCard';
 import EducationCard from '../components/EducationCard';
 import SkillsCard from '../components/SkillsCard';
+import data from '../components/data/education.json';
+import workData from '../components/data/work.json';
 
 const ResumeWrapper = styled.div`
   height: calc(100vh - 12.5rem);
@@ -33,6 +35,24 @@ const HeadingsWrapper = styled.div`
 `;
 
 const ResumePage = () => {
+  const educationComponents = data.map((education) => (
+    <EducationCard
+      key={education.id}
+      year={education.year}
+      title={education.title}
+      school={education.school}
+      description={education.description}
+    />
+  ));
+  const workComponents = workData.map((work) => (
+    <WorkCard
+      key={work.id}
+      years={work.years}
+      title={work.title}
+      employer={work.employer}
+      description={work.description}
+    />
+  ));
   return (
     <ThemeProvider theme={myTheme}>
       <Layout>
@@ -42,12 +62,12 @@ const ResumePage = () => {
             <HeadingsWrapper>
               <Heading.H>Work Experience</Heading.H>
             </HeadingsWrapper>
-            <WorkCard />
+            {workComponents}
             <HeadingsWrapper>
               <Heading.H>Education</Heading.H>
             </HeadingsWrapper>
           </Heading.LevelBoundary>
-          <EducationCard />
+          {educationComponents}
           <SkillsCard />
         </ResumeWrapper>
       </Layout>
