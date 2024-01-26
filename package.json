@@ -10,9 +10,9 @@
 		"eslint-check": "eslint --print-config src/pages/index.js | eslint-config-prettier-check"
 	},
 	"dependencies": {
-		"next": "12.0.0",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
+		"next": "14.1.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
 		"styled-components": "^6.1.8"
 	},
 	"devDependencies": {
