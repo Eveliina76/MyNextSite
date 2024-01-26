@@ -14,7 +14,9 @@ const StyledWrapper = styled.div`
 
 const StyledTextContainer = styled.div`
   text-align: center;
-  color: ${(props) => props.theme.colorWhite}; /* Set text color for visibility on the background */
+  color: ${(props) =>
+    props.theme
+      .colorWhite}; /* Set text color for visibility on the background */
 `;
 
 const StyledPageTitle = styled.h1`
@@ -29,7 +31,7 @@ const StyledParagraph = styled.p`
 
 const StyledPhotographerName = styled.p`
   font-family: ${(props) => props.theme.font};
-  font-size: 0.8rem; 
+  font-size: 0.8rem;
   color: ${(props) => props.theme.colorWhite};
   margin-top: 6rem;
 
@@ -38,18 +40,17 @@ const StyledPhotographerName = styled.p`
   }
 `;
 
-
 const UnderConstruction = () => {
   return (
     <StyledWrapper>
       <StyledTextContainer>
         <StyledPageTitle>Site Under Construction</StyledPageTitle>
-        <StyledParagraph>Something new is coming up. Stay tuned!</StyledParagraph>
+        <StyledParagraph>
+          Something new is coming up. Stay tuned!
+        </StyledParagraph>
         <StyledPhotographerName>
           Photo by{' '}
-          <a href="https://unsplash.com/@babybluecat">
-            J Lee on Unsplash
-          </a>
+          <a href="https://unsplash.com/@babybluecat">J Lee on Unsplash</a>
         </StyledPhotographerName>
       </StyledTextContainer>
     </StyledWrapper>
