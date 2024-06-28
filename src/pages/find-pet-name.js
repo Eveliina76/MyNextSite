@@ -1,7 +1,7 @@
 import PetNameGenerator from '../components/PetNameGenerator';
 
-const HomePage = () => {
+const FindPetName = () => {
   return <PetNameGenerator />;
 };
 
-export default HomePage;
+export default FindPetName;
