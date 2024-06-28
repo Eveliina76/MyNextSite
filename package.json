@@ -10,21 +10,22 @@
 		"eslint-check": "eslint --print-config src/pages/index.js | eslint-config-prettier-check"
 	},
 	"dependencies": {
-		"next": "14.1.0",
+		"@babel/runtime": "^7.24.7",
+		"next": "^14.2.4",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-share": "^5.1.0",
 		"styled-components": "^6.1.8"
 	},
 	"devDependencies": {
-		"@babel/eslint-parser": "^7.16.5",
+		"@babel/eslint-parser": "^7.24.7",
 		"@faker-js/faker": "^8.4.1",
 		"babel-plugin-styled-components": "^2.1.4",
-		"eslint": "^8.56.0",
+		"eslint": "^8.57.0",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-import": "^2.22.0",
-		"eslint-plugin-jsx-a11y": "^6.3.1",
+		"eslint-plugin-jsx-a11y": "^6.9.0",
 		"eslint-plugin-prettier": "^5.1.3",
 		"eslint-plugin-react": "^7.20.6",
 		"eslint-plugin-react-hooks": "^4.6.0",
