@@ -37,7 +37,7 @@ const StyledPageTitle = styled.h1`
   color: ${(props) => props.theme.colorChilli};
   font-family: ${(props) => props.theme.titleFont};
   font-size: 3rem;
-  margin: 2rem 0 3rem 0;
+  margin: 2rem 0 2rem 0;
 `;
 
 const StyledParagraph = styled.p`
@@ -56,6 +56,8 @@ const StyledH2 = styled.h2`
   color: ${(props) => props.theme.colorChilli};
   font-family: ${(props) => props.theme.titleFont};
   font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
 `;
 
 const StyledButtonWrapper = styled.div`
@@ -87,9 +89,19 @@ const StyledSoMeContainer = styled.div`
   width: 50%;
 `;
 
+const ShareButtonWrapper = styled.div`
+  &:hover {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+    border-radius: 30%;
+    margin: -2px;
+    padding: 2px;
+  }
+`;
+
 const StyledSoMeText = styled.p`
   color: ${(props) => props.theme.colorDarkTaupeGray};
   font-family: ${(props) => props.theme.font};
+  font-size: 1.2rem;
 `;
 
 const PetNameGenerator = () => {
@@ -190,22 +202,34 @@ const PetNameGenerator = () => {
             <Button onClick={clearFavorites}>Clear your Favorites</Button>
             <StyledSoMeText>Share your favorite names:</StyledSoMeText>
             <StyledSoMeContainer>
-              <FacebookShareButton url={shareUrl} quote={shareText}>
-                <FacebookIcon size={32} round />
-              </FacebookShareButton>
-              <WhatsappShareButton url={shareUrl} title={shareText}>
-                <WhatsappIcon size={32} round />
-              </WhatsappShareButton>
-              <PinterestShareButton
-                url={shareUrl}
-                media={shareUrl}
-                description={shareText}
-              >
-                <PinterestIcon size={32} round />
-              </PinterestShareButton>
-              <EmailShareButton url={shareUrl} subject={title} body={shareText}>
-                <EmailIcon size={32} round />
-              </EmailShareButton>
+              <ShareButtonWrapper>
+                <FacebookShareButton url={shareUrl} quote={shareText}>
+                  <FacebookIcon size={40} round />
+                </FacebookShareButton>
+              </ShareButtonWrapper>
+              <ShareButtonWrapper>
+                <WhatsappShareButton url={shareUrl} title={shareText}>
+                  <WhatsappIcon size={40} round />
+                </WhatsappShareButton>
+              </ShareButtonWrapper>
+              <ShareButtonWrapper>
+                <PinterestShareButton
+                  url={shareUrl}
+                  media={shareUrl}
+                  description={shareText}
+                >
+                  <PinterestIcon size={40} round />
+                </PinterestShareButton>
+              </ShareButtonWrapper>
+              <ShareButtonWrapper>
+                <EmailShareButton
+                  url={shareUrl}
+                  subject={title}
+                  body={shareText}
+                >
+                  <EmailIcon size={40} round />
+                </EmailShareButton>
+              </ShareButtonWrapper>
             </StyledSoMeContainer>
           </>
         )}
