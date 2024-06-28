@@ -113,7 +113,7 @@ const PetNameGenerator = () => {
 
   const [errorMessage, setErrorMessage] = useState('');
 
-  const MAX_FAVORITES = 5;
+  const MAX_FAVORITES = 7;
 
   const addToFavorites = () => {
     if (!favorites.includes(petName)) {
@@ -147,14 +147,14 @@ const PetNameGenerator = () => {
         <StyledParagraph>
           {petName
             ? 'Your pet name is ' + petName + '!'
-            : favorites.length === MAX_FAVORITES
-              ? ''
+            : favorites.length >= MAX_FAVORITES
+              ? 'You have reached the maximum number of favorite names. Please share your list and start again.'
               : favorites.length > 0
                 ? 'How about another name?'
                 : 'Choosing a name for your pet can be a difficult task. This page is here to help. Start by clicking female, male or neutral name:'}
         </StyledParagraph>
         {errorMessage && <StyledParagraph>{errorMessage}</StyledParagraph>}
-        {!petName && (
+        {!petName && favorites.length < MAX_FAVORITES && (
           <>
             <StyledButtonWrapper>
               <Button onClick={() => generatePetName('female')}>
