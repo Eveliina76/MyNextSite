@@ -179,7 +179,10 @@ const PetNameGenerator = () => {
                 Select Neutral Name
               </Button>
             </StyledButtonWrapper>
-            <StyledImage src="/CatandDog.svg" alt="Cat and dog" />
+            <StyledImage
+              src="/catanddog.svg"
+              alt="Orange cat and dog cheek to cheek looking at you with their loving eyes."
+            />
           </>
         )}
 
